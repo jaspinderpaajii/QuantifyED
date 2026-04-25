@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QuantifyED
 
-## Getting Started
+QuantifyED is a study-platform MVP built with the recommended stack we discussed:
 
-First, run the development server:
+- Next.js App Router
+- Tailwind CSS
+- Auth.js credentials-based admin login
+- Prisma schema for PostgreSQL
+- Supabase-ready PDF storage hooks
+
+## What is included
+
+- Public homepage with a curated study-platform design
+- Searchable resource listing page
+- Resource detail pages
+- Protected admin login
+- Admin overview dashboard
+- Editable categories
+- Resource upload form for `PDF` and `video link` entries
+- Local JSON-backed persistence for immediate development use
+
+## Why the app currently uses JSON as well
+
+The Prisma schema and Supabase storage hooks are already included, but the app is wired to a local JSON store first so you can run it immediately without paying for infrastructure on day one.
+
+When you are ready, you can switch to:
+
+- Supabase Postgres for `DATABASE_URL`
+- Supabase Storage for uploaded PDFs
+
+## Local run
 
 ```bash
+npm install
+npm run prisma:generate
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Admin credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The admin login is read from `.env.local`.
 
-## Learn More
+Important:
 
-To learn more about Next.js, take a look at the following resources:
+- do not commit real credentials
+- change `AUTH_SECRET` before production
+- change the admin password before deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Use `.env.example` as the base reference.
 
-## Deploy on Vercel
+Required later for production:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `DATABASE_URL`
+- `SUPABASE_URL`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `SUPABASE_STORAGE_BUCKET`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notes
+
+- PDF uploads currently fall back to local project storage when Supabase is not configured.
+- Local file uploads are fine for development, but for deployment you should move to Supabase Storage.
+- Student login and payments are intentionally left for the next phase.

@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ADMIN
+  STUDENT
+}
+
+enum ResourceType {
+  PDF
+  VIDEO
+}
+
+enum Visibility {
+  PUBLIC
+  DRAFT
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String?
+  name         String?
+  image        String?
+  role         Role     @default(STUDENT)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Category {
+  id          String     @id @default(cuid())
+  name        String     @unique
+  slug        String     @unique
+  description String
+  accent      String     @default("#1d4ed8")
+  featured    Boolean    @default(false)
+  resources   Resource[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Resource {
+  id           String       @id @default(cuid())
+  slug         String       @unique
+  title        String
+  summary      String
+  description  String
+  categoryId   String
+  category     Category     @relation(fields: [categoryId], references: [id], onDelete: Restrict)
+  resourceType ResourceType
+  visibility   Visibility   @default(PUBLIC)
+  featured     Boolean      @default(false)
+  exam         String
+  level        String
+  tags         String[]
+  author       String
+  fileUrl      String?
+  videoUrl     String?
+  pageCount    Int?
+  duration     String?
+  coverImage   String?
+  downloads    Int          @default(0)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}

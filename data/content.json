@@ -1,0 +1,209 @@
+{
+  "categories": [
+    {
+      "id": "a3ca05b2-612c-484f-94e8-5a8da65cd9ce",
+      "name": "Mathematics",
+      "slug": "mathematics",
+      "description": "Mathematics for 11th and 12th standard of igcse",
+      "accent": "#1d4ed8",
+      "featured": false,
+      "createdAt": "2026-04-24T16:21:37.535Z",
+      "updatedAt": "2026-04-24T16:21:37.535Z"
+    },
+    {
+      "id": "cat-quantitative-aptitude",
+      "name": "Quantitative Aptitude",
+      "slug": "quantitative-aptitude",
+      "description": "Formulas, short methods, arithmetic drills, and aptitude prep packs.",
+      "accent": "#0f766e",
+      "featured": true,
+      "createdAt": "2026-04-01T09:00:00.000Z",
+      "updatedAt": "2026-04-14T09:00:00.000Z"
+    },
+    {
+      "id": "cat-reasoning",
+      "name": "Logical Reasoning",
+      "slug": "logical-reasoning",
+      "description": "Puzzle sets, verbal reasoning concepts, and decision-making practice.",
+      "accent": "#1d4ed8",
+      "featured": true,
+      "createdAt": "2026-04-01T09:00:00.000Z",
+      "updatedAt": "2026-04-14T09:00:00.000Z"
+    },
+    {
+      "id": "cat-verbal",
+      "name": "Verbal Ability",
+      "slug": "verbal-ability",
+      "description": "Reading comprehension, grammar essentials, and placement communication prep.",
+      "accent": "#9a3412",
+      "featured": false,
+      "createdAt": "2026-04-01T09:00:00.000Z",
+      "updatedAt": "2026-04-14T09:00:00.000Z"
+    },
+    {
+      "id": "cat-di",
+      "name": "Data Interpretation",
+      "slug": "data-interpretation",
+      "description": "Tables, charts, caselets, and sprint-style walkthrough sessions.",
+      "accent": "#7c3aed",
+      "featured": true,
+      "createdAt": "2026-04-01T09:00:00.000Z",
+      "updatedAt": "2026-04-14T09:00:00.000Z"
+    }
+  ],
+  "resources": [
+    {
+      "id": "efd95ca0-cca4-48b2-ac14-35f5b200cb4b",
+      "slug": "kumbhojkar",
+      "title": "kumbhojkar",
+      "summary": "a detailed guide for 11th 12th grade students for calculus from set and relation to definite integration",
+      "description": "a detailed guide for 11th 12th grade students for calculus from set and relation to definite integration",
+      "categoryId": "a3ca05b2-612c-484f-94e8-5a8da65cd9ce",
+      "resourceType": "PDF",
+      "visibility": "PUBLIC",
+      "featured": false,
+      "exam": "12TH Boards/HSC",
+      "level": "Beginner to Intermediate",
+      "tags": [
+        "Detailed",
+        "Problem solving",
+        "Mathematics"
+      ],
+      "author": "QuantifyED Team",
+      "fileUrl": "/uploads/resources/1777060803228-kumbhojkar.pdf",
+      "videoUrl": null,
+      "pageCount": 38,
+      "duration": null,
+      "coverImage": null,
+      "downloads": 0,
+      "createdAt": "2026-04-24T20:00:03.240Z",
+      "updatedAt": "2026-04-24T20:00:03.240Z"
+    },
+    {
+      "id": "res-di-sprint",
+      "slug": "data-interpretation-sprint-session",
+      "title": "Data Interpretation Sprint Session",
+      "summary": "A guided video-link resource focused on chart reading speed and set selection.",
+      "description": "This session is ideal for students who want a quick reset on DI pacing. It focuses on picking the right set, avoiding over-calculation, and spotting chart traps in mixed mock sections.",
+      "categoryId": "cat-di",
+      "resourceType": "VIDEO",
+      "visibility": "PUBLIC",
+      "featured": true,
+      "exam": "CAT / OMETs",
+      "level": "Intermediate",
+      "tags": [
+        "DI",
+        "Video",
+        "Speed"
+      ],
+      "author": "QuantifyED Team",
+      "fileUrl": null,
+      "videoUrl": "https://www.youtube.com/results?search_query=data+interpretation+shortcuts",
+      "pageCount": null,
+      "duration": "42 min",
+      "coverImage": null,
+      "downloads": 214,
+      "createdAt": "2026-04-06T09:00:00.000Z",
+      "updatedAt": "2026-04-25T14:38:47.310Z"
+    },
+    {
+      "id": "res-reasoning-pack",
+      "slug": "logical-reasoning-foundation-pack",
+      "title": "Logical Reasoning Foundation Pack",
+      "summary": "A PDF bundle for syllogisms, seating arrangements, coding, and blood relations.",
+      "description": "Built as a starter pack for competitive exam learners, this resource groups together high-frequency reasoning patterns, solved examples, and mini-drills for concept reinforcement.",
+      "categoryId": "cat-reasoning",
+      "resourceType": "PDF",
+      "visibility": "PUBLIC",
+      "featured": false,
+      "exam": "Bank / SSC / Placements",
+      "level": "Beginner",
+      "tags": [
+        "Reasoning",
+        "Starter Pack",
+        "PDF"
+      ],
+      "author": "QuantifyED Team",
+      "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "videoUrl": null,
+      "pageCount": 66,
+      "duration": null,
+      "coverImage": null,
+      "downloads": 187,
+      "createdAt": "2026-04-07T09:00:00.000Z",
+      "updatedAt": "2026-04-15T09:00:00.000Z"
+    },
+    {
+      "id": "res-verbal-video",
+      "slug": "placement-verbal-ability-playbook",
+      "title": "Placement Verbal Ability Playbook",
+      "summary": "A curated video-link resource for RC strategy, grammar traps, and tone-based questions.",
+      "description": "This resource is meant for students preparing for campus placements who need a dependable verbal reset. It highlights the most common grammar mistakes and how to read faster without losing accuracy.",
+      "categoryId": "cat-verbal",
+      "resourceType": "VIDEO",
+      "visibility": "PUBLIC",
+      "featured": false,
+      "exam": "Placements",
+      "level": "Beginner to Intermediate",
+      "tags": [
+        "Verbal",
+        "Grammar",
+        "RC"
+      ],
+      "author": "QuantifyED Team",
+      "fileUrl": null,
+      "videoUrl": "https://www.youtube.com/results?search_query=verbal+ability+placement+preparation",
+      "pageCount": null,
+      "duration": "31 min",
+      "coverImage": null,
+      "downloads": 129,
+      "createdAt": "2026-04-08T09:00:00.000Z",
+      "updatedAt": "2026-04-15T09:00:00.000Z"
+    },
+    {
+      "id": "res-speed-math",
+      "slug": "bank-po-speed-math-cheat-sheet",
+      "title": "Bank PO Speed Math Cheat Sheet",
+      "summary": "A compact PDF for percentages, ratios, averages, and approximation techniques.",
+      "description": "This PDF is structured around timed practice. It is especially useful for learners who know the concepts but want to improve speed through familiar patterns and simplified solving methods.",
+      "categoryId": "cat-quantitative-aptitude",
+      "resourceType": "PDF",
+      "visibility": "PUBLIC",
+      "featured": true,
+      "exam": "Bank PO",
+      "level": "Intermediate",
+      "tags": [
+        "Speed Math",
+        "Banking",
+        "Practice"
+      ],
+      "author": "QuantifyED Team",
+      "fileUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+      "videoUrl": null,
+      "pageCount": 28,
+      "duration": null,
+      "coverImage": null,
+      "downloads": 298,
+      "createdAt": "2026-04-09T09:00:00.000Z",
+      "updatedAt": "2026-04-15T09:00:00.000Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "c7b54407-6d75-4da1-bc42-00116c6b4d7b",
+      "name": "aryan",
+      "email": "aryanverma041206@gmail.com",
+      "passwordHash": "$2b$10$2TtbBsaBHsMTG/4aNvvP9uZTF3W6.m77f/Pp3KQi.3uYnpYPYcY8G",
+      "createdAt": "2026-04-25T15:01:26.899Z",
+      "updatedAt": "2026-04-25T15:01:26.899Z"
+    }
+  ],
+  "savedResources": [
+    {
+      "id": "0226101f-91d6-4c40-9ff3-fa100f8e9995",
+      "studentId": "c7b54407-6d75-4da1-bc42-00116c6b4d7b",
+      "resourceId": "res-speed-math",
+      "createdAt": "2026-04-25T15:02:37.268Z"
+    }
+  ]
+}
